@@ -1,0 +1,28 @@
+{
+  "name": "uno",
+  "version": "0.1.0",
+  "description": "Turn your website into an executable",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jibberjay/uno.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+    "uno": "./bin/uno.js"
+  },
+  "bugs": {
+    "url": "https://github.com/Jibberjay/uno/issues"
+  },
+  "homepage": "https://github.com/Jibberjay/uno#readme",
+  "dependencies": {
+    "html-minifier-terser": "^7.0.0",
+    "terser": "^5.30.0",
+    "csso": "^5.0.5"
+  }
+}
