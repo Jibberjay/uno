@@ -3,6 +3,7 @@ node_modules/
 
 # Test directories
 test-project/
+output/
 
 # IDE files
 .vscode/
