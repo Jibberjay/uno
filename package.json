@@ -1,0 +1,26 @@
+{
+  "name": "uno",
+  "version": "1.0.0",
+  "description": "Turn websites into executables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "uno": "./index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jibberjay/uno.git"
+  },
+  "author": "Jathan Rietz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jibberjay/uno/issues"
+  },
+  "homepage": "https://github.com/Jibberjay/uno#readme",
+  "dependencies": {
+    "commander": "^15.0.0"
+  }
+}

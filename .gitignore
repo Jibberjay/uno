@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+
+# Test directories
+test-project/
+
+# IDE files
+.vscode/
