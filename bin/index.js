@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { build } from "../src/build.js";
+
 import { program } from "commander";
 import chalk from "chalk";
 
