@@ -13,11 +13,12 @@ program
   .argument("<input-dir>")
   .argument("[output-dir]")
 
-  .option("-d, --dev", "bypass code minification")
+  .option("-d, --dev", "leave code unminified")
   .option("-b, --debug", "log every uno operation")
+  .option("-o, --offline", "inlcude absolute URLs")
 
   .action(async (inputDir, outputDir, options) => {
-    outputDir = outputDir || "output";
+    outputDir = outputDir || "_output";
     build(inputDir, outputDir, options).then(() => {
       console.log(chalk.green("Reading from " + inputDir + ", writing to " + outputDir));
     }).catch(err => {
