@@ -32,6 +32,19 @@ export async function build(inputDir, outputDir, options) {
     }
   });
 
+  // Internalize JS
+  // ! Test this, I have no idea if it works
+  let scripts = $('script[src]');
+  scripts.each((_, el) => {
+    const src = $(el).attr().src;
+    if (!src.includes("https://")) {
+      let jsPath = path.resolve(inputPath, src);
+      if (!fs.existsSync(jsPath)) throw new Error("Could not locate file at '" + jsPath + "'");
+      let js = fs.readFileSync(jsPath);
+      $(el).attr("src", "data:text/js," + encodeURIComponent(js));
+    }
+  });
+
   // Serialize changes
   html = $.html();
 
