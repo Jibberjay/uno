@@ -4,11 +4,17 @@
   "description": "Turn websites into executables",
   "main": "bin/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node bin/index.js site docs"
   },
   "bin": {
     "uno": "./index.js"
   },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "repository": {
     "type": "git",
