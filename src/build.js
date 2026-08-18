@@ -41,7 +41,7 @@ export async function build(inputDir, outputDir, options) {
       let jsPath = path.resolve(inputPath, src);
       if (!fs.existsSync(jsPath)) throw new Error("Could not locate file at '" + jsPath + "'");
       let js = fs.readFileSync(jsPath);
-      $(el).attr("src", "data:text/js," + encodeURIComponent(js));
+      $(el).attr("src", "data:text/javascript," + encodeURIComponent(js));
     }
   });
 
