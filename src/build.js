@@ -33,7 +33,6 @@ export async function build(inputDir, outputDir, options) {
   });
 
   // Internalize JS
-  // ! Test this, I have no idea if it works
   let scripts = $('script[src]');
   scripts.each((_, el) => {
     const src = $(el).attr().src;

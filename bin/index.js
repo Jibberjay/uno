@@ -15,7 +15,7 @@ program
 
   .option("-d, --dev", "leave code unminified")
   .option("-b, --debug", "log every uno operation")
-  .option("-o, --offline", "inlcude absolute URLs")
+  .option("-o, --offline", "include absolute URLs")
 
   .action(async (inputDir, outputDir, options) => {
     outputDir = outputDir || "_output";
