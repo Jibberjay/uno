@@ -1,1 +1,1 @@
-document.write("<p><em>Hello world!&nbsp;&mdash;&nbsp;JavaScript</em></p>");
+console.log("Hello, world!");
